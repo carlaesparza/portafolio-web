@@ -1,10 +1,22 @@
 <script setup lang="ts">
+import Button from '@/components/ui/button/Button.vue';
+import { House } from '@lucide/vue';
 
 </script>
 
 
 <template>
-    <h1>Obras de diamantes</h1>
+
+    <div class="flex flex-row-reverse justify-between gap-4 p-4 bg-green-200 h-screen">
+        <h1>Obras de diamantes</h1>
+
+        <RouterLink to="/">
+            <Button class="bg-green-200 text-gray-900 hover:bg-green-300">
+                <House />
+            </Button>
+        </RouterLink>
+    </div>
+    
 </template>
 
 
