@@ -1,8 +1,9 @@
-import Ciris from "@/pages/ciris/Ciris.vue";
-import Diamants from "@/pages/diamants/Diamants.vue";
+import Ciris from "@/pages/finestres/ciris/Ciris.vue";
+import Diamants from "@/pages/finestres/diamants/Diamants.vue";
 import Home from "@/pages/home/Home.vue";
-import Sabons from "@/pages/sabons/Sabons.vue";
+import Sabons from "@/pages/finestres/sabons/Sabons.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
+import Layout from "@/pages/Layout.vue";
 
 
 export const router = createRouter({
@@ -15,20 +16,27 @@ export const router = createRouter({
       component: Home
     },
     {
-      path: "/velas",
-      name: "velas",
-      component: Ciris
+      path: '/',
+      component: Layout,
+      children: [
+       {
+          path: "/velas",
+          name: "velas",
+          component: Ciris
+        },
+        {
+          path: "/jabones",
+          name: "jabones",
+          component: Sabons
+        },
+        {
+          path: "/diamond-painting",
+          name: "diamond-painting",
+          component: Diamants
+        }
+      ]
     },
-    {
-      path: "/jabones",
-      name: "jabones",
-      component: Sabons
-    },
-    {
-      path: "/diamond-painting",
-      name: "diamond-painting",
-      component: Diamants
-    },
+    
 
     
     {
