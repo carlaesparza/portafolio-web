@@ -36,7 +36,7 @@ import { Button } from '@/components/ui/button'
       
       <div class="flex justify-center items-center min-h-[60vh] px-6">
         <div class="bg-green-100 rounded-2xl p-8 max-w-5xl w-full shadow-md">
-            <p class="text-center text-2xl text-green-950">
+            <p class="text-justify text-xl md:text-2xl text-green-950">
                 "Encender una vela no es solo un detalle bonito, también es un respiro para el cuerpo. La luz suave ayuda a que la mente se calme, la respiración se vuelve más tranquila y el corazón baja revoluciones. Poco a poco el estrés se suelta y aparecen esas sensaciones de paz que tanto necesitamos en el día a día. A veces, cuidarnos empieza con algo tan sencillo como regalarnos este momento."
             </p>
         </div>
