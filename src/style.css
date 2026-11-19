@@ -4,6 +4,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -124,4 +127,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.marck-script {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0;
 }

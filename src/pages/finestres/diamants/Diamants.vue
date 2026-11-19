@@ -14,7 +14,7 @@
             <h1>Diamond painting</h1>
         </div>
     </div>
-    
+    <RouterView/>
 </template>
 
 

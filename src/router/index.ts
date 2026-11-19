@@ -6,6 +6,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from "@/pages/Layout.vue";
 
 
+
+import Productes from "@/pages/productos/Productes.vue";
+
+
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
 
@@ -21,18 +25,36 @@ export const router = createRouter({
       children: [
        {
           path: "/velas",
-          name: "velas",
-          component: Ciris
+          component: Ciris,
+          children: [
+            {
+              path: 'catalogo',
+              component: Productes,
+              props: { seccion: 'velas'}
+            }
+          ]
         },
         {
           path: "/jabones",
-          name: "jabones",
-          component: Sabons
+          component: Sabons,
+          children: [
+            {
+              path: 'productos',
+              component: Productes,
+              props: { seccion: 'jabones'}
+            }
+          ]
         },
         {
           path: "/diamond-painting",
-          name: "diamond-painting",
-          component: Diamants
+          component: Diamants,
+          children: [
+            {
+              path: 'obras',
+              component: Productes,
+              props: { seccion: 'diamond-painting'}
+            }
+          ]
         }
       ]
     },
