@@ -24,6 +24,22 @@ const rutaCatalogo = computed(() => {
   return '/'
 })
 
+const rutaSeccion = computed(() => {
+  if (route.path.startsWith('/velas')) {
+    return '/velas'
+  }
+
+  if (route.path.startsWith('/jabones')) {
+    return '/jabones'
+  }
+
+  if (route.path.startsWith('/diamond-painting')) {
+    return '/diamond-painting'
+  }
+
+  return '/'
+})
+
 </script>
 
 
@@ -38,7 +54,7 @@ const rutaCatalogo = computed(() => {
                 </RouterLink>
 
                 <div class="flex justify-end gap-3 p-3 w-screen">
-                    <RouterLink to="">
+                    <RouterLink :to="rutaSeccion">
                         <Button class="bg-green-200 text-gray-900 hover:bg-green-300">
                             ¿De donde vienen?
                         </Button>

@@ -20,50 +20,58 @@ export const router = createRouter({
       component: Home
     },
     {
-      path: '/',
+      path: '/velas',
       component: Layout,
       children: [
-       {
-          path: "/velas",
+        {
+          path: '',
           component: Ciris,
-          children: [
-            {
-              path: 'catalogo',
-              component: Productes,
-              props: { seccion: 'velas'}
-            }
-          ]
         },
         {
-          path: "/jabones",
-          component: Sabons,
-          children: [
-            {
-              path: 'productos',
-              component: Productes,
-              props: { seccion: 'jabones'}
-            }
-          ]
-        },
-        {
-          path: "/diamond-painting",
-          component: Diamants,
-          children: [
-            {
-              path: 'obras',
-              component: Productes,
-              props: { seccion: 'diamond-painting'}
-            }
-          ]
+          path: 'catalogo',
+          component: Productes,
+          props: { seccion: 'velas' }
         }
       ]
     },
-    
-
-    
+    {
+      path: "/jabones",
+      component: Layout,
+      children: [
+        {
+          path: '',
+          component: Sabons
+        },
+        {
+          path: 'productos',
+          component: Productes,
+          props: { seccion: 'jabones'}
+        }
+      ]
+    },
+    {
+      path: "/diamond-painting",
+      component: Layout,
+      children: [
+        {
+          path: '',
+          component: Diamants
+        },
+        {
+          path: 'obras',
+          component: Productes,
+          props: { seccion: 'diamond-painting'}
+        }
+      ]
+    },
+  
     {
       path: '/:patchMatch(.*)',
       redirect: '/'
     }
   ]
 })
+    
+
+    
+    
