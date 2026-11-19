@@ -10,6 +10,14 @@
         <div class="w-full flex justify-center min-width text-2xl sm:text-4xl md:text-6xl  text-green-950 font-bold h-auto pt-5">
             <h1>Jabones caseros</h1>
         </div>
+
+        <div>
+            <h2>¿De donde vienen nuestros jabones?</h2>
+        </div>
+        <div>
+            <p></p>
+        </div>    
+
     </div>
     
     
