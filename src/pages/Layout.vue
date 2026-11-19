@@ -46,21 +46,21 @@ const rutaSeccion = computed(() => {
 <template>
     <div>
         <header>
-            <div class="flex p-2 bg-green-300">
+            <div class="flex p-2 bg-beige">
                 <RouterLink to="/">
-                    <Button class="flex justify-start h-full bg-green-200 text-gray-900 hover:bg-green-300">
+                    <Button class="flex justify-start h-full bg-ivory text-forest hover:bg-sage">
                         <House />
                     </Button>
                 </RouterLink>
 
                 <div class="flex justify-end gap-3 p-3 w-screen">
                     <RouterLink :to="rutaSeccion">
-                        <Button class="bg-green-200 text-gray-900 hover:bg-green-300">
+                        <Button class="bg-ivory text-forest hover:bg-sage">
                             ¿De donde vienen?
                         </Button>
                     </RouterLink>
                     <RouterLink :to="rutaCatalogo">
-                        <Button class="bg-green-200 text-gray-900 hover:bg-green-300">
+                        <Button class="bg-ivory text-forest hover:bg-sage">
                             Catálogo
                         </Button>
                     </RouterLink>
@@ -76,7 +76,7 @@ const rutaSeccion = computed(() => {
     <main>
         <RouterView/>
     </main>
-    <footer class="bg-green-950 text-green-200 text-center py-6 w-full ">
+    <footer class="bg-forest text-ivory text-center py-6 w-full ">
         <div>
 	        <strong>All Rights Reserved</strong>
         </div>

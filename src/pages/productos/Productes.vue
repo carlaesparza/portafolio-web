@@ -7,16 +7,16 @@ defineProps<{
 
 <template>
   
-  <section class="bg-green-50 min-h-screen p-8">
+  <section class="bg-ivory min-h-screen p-8">
 
-    <h1 class="text-4xl font-bold text-green-950 text-center mb-8">
+    <h1 class="text-4xl font-bold text-forest text-center mb-8">
       Catálogo
     </h1>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -34,7 +34,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -52,7 +52,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -70,7 +70,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -88,7 +88,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -106,7 +106,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -124,7 +124,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">
@@ -142,7 +142,7 @@ defineProps<{
         </div>
         <div class="bg-white rounded-xl shadow-md p-4">
 
-            <div class="bg-green-100 aspect-square w-full rounded-lg">
+            <div class="bg-ivory aspect-square w-full rounded-lg">
             </div>
 
             <h2 class="text-xl font-bold mt-4">

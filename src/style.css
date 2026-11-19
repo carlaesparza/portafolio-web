@@ -6,6 +6,12 @@
 
 
 
+@theme {
+  --color-beige: #D8C7AD;
+  --color-sage: #A8AA91;
+  --color-ivory: #F5EFE5;
+  --color-forest: #354638;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,6 +124,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+
 }
 
 @layer base {
