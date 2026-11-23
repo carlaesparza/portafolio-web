@@ -16,150 +16,32 @@ defineProps<{
     </h1>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        <div class="bg-white rounded-xl shadow-md p-4">
+         <div
+        v-for="product in products"
+        :key="product.id"
+        class="bg-white rounded-xl shadow-md p-4"
+      >
 
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
+        <img
+          :src="product.image"
+          :alt="product.name"
+          class="bg-ivory aspect-square w-full rounded-lg object-cover"
+        />
 
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
+        <h2 class="text-xl font-bold mt-4 text-forest">
+          {{ product.name }}
+        </h2>
 
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
+        <p class="text-gray-600">
+          {{ product.description }}
+        </p>
 
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
+        <p class="font-bold text-forest mt-3">
+          {{ product.price }} €
+        </p>
 
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
+      </div>
 
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela rosal
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-4">
-
-            <div class="bg-ivory aspect-square w-full rounded-lg">
-            </div>
-
-            <h2 class="text-xl font-bold mt-4">
-                Vela aromática
-            </h2>
-
-            <p class="text-gray-600">
-                Vela artesanal con aroma especial.
-            </p>
-
-            <p class="font-bold text-green-800 mt-3">
-                12 €
-            </p>
-
-        </div>
     </div>
 
   </section>
