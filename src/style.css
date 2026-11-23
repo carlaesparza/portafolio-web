@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Braah+One&family=Idiqlat:wght@200;300;400&family=Voltaire&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -143,4 +145,39 @@
   font-style: normal;
   font-size: 32px;
   letter-spacing: 0;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.idiqlat-extralight {
+  font-family: "Idiqlat", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.idiqlat-light {
+  font-family: "Idiqlat", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.idiqlat-regular {
+  font-family: "Idiqlat", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.voltaire-regular {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.braah-one-regular {
+  font-family: "Braah One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

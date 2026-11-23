@@ -42,7 +42,7 @@ const catalogPath = computed(() => {
         <img
             :src="product.image"
             :alt="product.name"
-            class="w-full aspect-square object-cover rounded-2xl"
+            class="w-full h-auto max-h-[600px] object-cover rounded-2xl"
         />
 
         <!-- Información -->

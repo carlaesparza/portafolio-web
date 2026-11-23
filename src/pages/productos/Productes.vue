@@ -41,7 +41,7 @@ const filteredProducts = computed(() =>
             </h2>
 
             <p class="text-gray-600">
-            {{ product.description }}
+            {{ product.shortDescription }}
             </p>
 
             <p class="font-bold text-forest mt-3">

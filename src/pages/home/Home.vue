@@ -11,8 +11,8 @@ import { Button } from '@/components/ui/button'
 <template>
 
   <div class="bg-beige h-screen">
-    <h1 class="flex justify-center min-width text-3xl sm:text-5xl md:text-8xl  text-forest font-bold h-auto pt-10">
-      Página Principal
+    <h1 class="flex justify-center voltaire-regular min-width text-3xl sm:text-5xl md:text-8xl text-forest font-bold h-auto pt-15">
+      MARETTA
     </h1>
 
     <div>
