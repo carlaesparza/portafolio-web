@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { products } from '@/components/data/productes';
+
 defineProps<{
   seccion: 'velas' | 'jabones' | 'diamond-painting'
 }>()
