@@ -11,7 +11,7 @@ export const products = [
     },
     {
       id: 2,
-      name: 'Wax melt con aroma de chocolate',
+      name: 'Wax melt de chocolate',
       category: 'velas',
       price: 9.50,
       image: '/fotos/fotosCiris/vela-chocolate.jpg',
@@ -67,7 +67,7 @@ export const products = [
     },
     {
       id: 9,
-      name: 'Wax melts de chocolate y naranja',
+      name: 'Wax melts de chocolate',
       category: 'velas',
       price: 9.50,
       image: '/fotos/fotosCiris/vela-tableta.jpg',

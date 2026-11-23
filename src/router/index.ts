@@ -8,6 +8,7 @@ import Layout from "@/pages/Layout.vue";
 
 
 import Productes from "@/pages/productos/Productes.vue";
+import ProductesDetalls from "@/pages/ProductesDetalls.vue";
 
 
 export const router = createRouter({
@@ -63,6 +64,11 @@ export const router = createRouter({
           props: { seccion: 'diamond-painting'}
         }
       ]
+    },
+    {
+      path: '/producto/:id',
+      name: 'product-detail',
+      component: ProductesDetalls
     },
   
     {

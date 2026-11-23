@@ -23,10 +23,11 @@ const filteredProducts = computed(() =>
     </h1>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-         <div
+        <RouterLink
             v-for="product in filteredProducts"
             :key="product.id"
-            class="bg-white rounded-xl shadow-md p-4"
+            :to="{ name: 'product-detail', params: { id: product.id } }"
+            class="block bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition cursor-pointer"
         >
 
             <img
@@ -47,7 +48,7 @@ const filteredProducts = computed(() =>
             {{ product.price }} €
             </p>
 
-      </div>
+        </RouterLink>
 
     </div>
 
