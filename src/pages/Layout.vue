@@ -67,15 +67,19 @@ const rutaSeccion = computed(() => {
                             Catálogo
                         </Button>
                     </RouterLink>
-                    <div class="relative flex items-center justify-center w-10 h-10 text-forest">
-                        <ShoppingCart class="w-6 h-6" />
-                        <span
-                            v-if="cart.items.length > 0"
-                            class="absolute top-0 right-0 bg-forest text-ivory text-xs rounded-full w-5 h-5 flex items-center justify-center"
-                        >
-                            {{ cart.items.length }}
-                        </span>
-                    </div>
+                    <RouterLink to="/carrito">
+                        <div class="relative flex items-center justify-center w-10 h-10 text-forest">
+                            <ShoppingCart class="w-6 h-6" />
+                            <span
+                                v-if="cart.items.length > 0"
+                                class="absolute top-0 right-0 bg-forest text-ivory text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                            >
+                                {{ cart.items.length }}
+                            </span>
+                        </div>
+                    </RouterLink>
+                    
+                    
                     
                 </div>
 

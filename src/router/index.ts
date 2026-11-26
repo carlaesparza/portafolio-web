@@ -4,11 +4,9 @@ import Home from "@/pages/home/Home.vue";
 import Sabons from "@/pages/finestres/sabons/Sabons.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from "@/pages/Layout.vue";
-
-
-
 import Productes from "@/pages/productos/Productes.vue";
 import ProductesDetalls from "@/pages/ProductesDetalls.vue";
+import Carro from "@/pages/Carro.vue";
 
 
 export const router = createRouter({
@@ -69,6 +67,11 @@ export const router = createRouter({
       path: '/producto/:id',
       name: 'product-detail',
       component: ProductesDetalls
+    },
+    {
+      path: '/carrito',
+      name: 'cart',
+      component: Carro
     },
   
     {
