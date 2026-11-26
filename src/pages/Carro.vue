@@ -90,6 +90,16 @@ const total = computed(() => {
                 </div>
             </div>
         </div>
+        <div
+            v-if="cartProducts.length > 0"
+            class="mt-8 flex justify-end"
+            >
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <p class="text-xl font-bold text-forest">
+                Total: {{ total.toFixed(2) }} €
+                </p>
+            </div>
+        </div>
 
     </section>
     
