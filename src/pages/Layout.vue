@@ -2,9 +2,12 @@
 import Button from '@/components/ui/button/Button.vue';
 import { House } from '@lucide/vue';
 import { RouterLink, RouterView } from 'vue-router';
-
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { ShoppingCart } from '@lucide/vue';
+import { useCartStore } from '@/stores/carrito'
+
+const cart = useCartStore()
 
 const route = useRoute()
 
@@ -53,10 +56,10 @@ const rutaSeccion = computed(() => {
                     </Button>
                 </RouterLink>
 
-                <div class="flex justify-end gap-3 p-3 w-screen">
+                <div class="flex items-center justify-end gap-3 p-3 w-screen">
                     <RouterLink :to="rutaSeccion">
                         <Button class="bg-ivory text-forest hover:bg-sage">
-                            ¿De donde vienen?
+                            Inicio
                         </Button>
                     </RouterLink>
                     <RouterLink :to="rutaCatalogo">
@@ -64,7 +67,15 @@ const rutaSeccion = computed(() => {
                             Catálogo
                         </Button>
                     </RouterLink>
-                    
+                    <div class="relative flex items-center justify-center w-10 h-10 text-forest">
+                        <ShoppingCart class="w-6 h-6" />
+                        <span
+                            v-if="cart.items.length > 0"
+                            class="absolute top-0 right-0 bg-forest text-ivory text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                        >
+                            {{ cart.items.length }}
+                        </span>
+                    </div>
                     
                 </div>
 

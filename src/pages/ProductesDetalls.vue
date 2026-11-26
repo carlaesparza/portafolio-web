@@ -2,6 +2,10 @@
 import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { products } from '@/components/data/productes'
+import { useCartStore } from '@/stores/carrito'
+
+const cart = useCartStore()
+
 
 const route = useRoute()
 
@@ -64,9 +68,10 @@ const catalogPath = computed(() => {
             </p>
 
             <button
-            class="mt-8 bg-forest text-ivory px-8 py-3 rounded-xl hover:bg-sage transition"
+                @click="cart.addToCart(product.id)"
+                class="mt-8 bg-forest text-ivory px-8 py-3 rounded-xl hover:bg-sage transition"
             >
-            Añadir al carrito
+                Añadir al carrito
             </button>
         </div>
 

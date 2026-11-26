@@ -153,7 +153,7 @@ export const products = [
       price: 20,
       image: '/fotos/fotosDiamond/diamond-blancanieves.jpg',
       shortDescription: 'Lienzo de diamond painting con la imagen de Blancanieves.',
-      description: 'Lienzo de diamond painting con medidas representando una imagen tierna de Blancanieves.'
+      description: 'Lienzo de diamond painting con medidas de 30 x 40 cm representando una imagen tierna de Blancanieves.'
     },
     {
       id: 18,
@@ -162,7 +162,7 @@ export const products = [
       price: 18,
       image: '/fotos/fotosDiamond/diamond-casa.jpg',
       shortDescription: 'Lienzo de diamond painting de una casa rural.',
-      description: 'Lienzo de diamond painting con las medidas de cm el qual representa una imagen de una casa rural acogedora.'
+      description: 'Lienzo de diamond painting con las medidas de 30 x 40 cm el qual representa una imagen de una casa rural acogedora.'
     },
     {
       id: 19,
@@ -171,7 +171,7 @@ export const products = [
       price: 19.50,
       image: '/fotos/fotosDiamond/diamond-felino.jpg',
       shortDescription: 'Lienzo de Diamond painting de un Leopardo con tonos rosados.',
-      description: 'Lienzo de Diamond painting con las medidas cm con una representación figurativa de un leopardo con tonos rosados.'
+      description: 'Lienzo de Diamond painting con las medidas de 30 x 40 cm con una representación figurativa de un leopardo con tonos rosados.'
     },
     {
       id: 20,
@@ -180,7 +180,7 @@ export const products = [
       price: 20,
       image: '/fotos/fotosDiamond/diamond-floral.jpg',
       shortDescription: 'Lienzo de diamond painting con flores.',
-      description: 'Lienzo de diamond painting  con las medidas cm un cun conjunto de motivos florales y coloridos.'
+      description: 'Lienzo de diamond painting  con las medidas de 30 x 40 cm un cun conjunto de motivos florales y coloridos.'
     },
     {
       id: 21,
@@ -189,7 +189,7 @@ export const products = [
       price: 12,
       image: '/fotos/fotosDiamond/diamond-gato.jpg',
       shortDescription: 'Lienzo de diamond painting de una niña y su gato.',
-      description: 'Lienzo de diamond painting con diseño original y amable co las medidas de cm, representa en la imagen a una niña jugando con su gato.'
+      description: 'Lienzo de diamond painting con diseño original y amable con las medidas de 30 x 40 cm, representa en la imagen a una niña jugando con su gato.'
     },
     {
       id: 22,
@@ -198,7 +198,7 @@ export const products = [
       price: 20,
       image: '/fotos/fotosDiamond/diamond-mickey.jpg',
       shortDescription: 'Lienzo de diamond painting de Mickey Mouse con estilo urbano.',
-      description: 'Lienzo de diamond painting con las medidas de cm, la imagen de Mickey Mouse con un estilo más urbano inspirado en los graffitis.'
+      description: 'Lienzo de diamond painting con las medidas de 30 x 40 cm, la imagen de Mickey Mouse con un estilo más urbano inspirado en los graffitis.'
     },
     {
       id: 23,
