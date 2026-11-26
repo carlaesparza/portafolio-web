@@ -49,45 +49,56 @@ const total = computed(() => {
                 Seguir comprando
             </RouterLink>
         </div>
-        <div v-else class="space-y-4">
+        <div v-else class="space-y-5">
             <div
                 v-for="product in cartProducts"
                 :key="product.id"
-                class="bg-white rounded-xl shadow-md p-4"
+                class="bg-white rounded-xl shadow-sm border border-sage/30 p-4 flex items-center gap-5"
             >
-                <img
-                    :src="product.image"
-                    :alt="product.name"
-                    class="w-24 h-24 object-contain rounded-lg"
-                />
 
-                <h2 class="text-lg font-semibold text-forest">
-                    {{ product.name }}
-                </h2>
-
-                <p class="text-forest font-medium mt-2">
-                    {{ product.price }} €
-                </p>
-
-                <div class="flex items-center gap-3 mt-3">
-                    <button
-                        @click="cart.decreaseQuantity(product.id)"
-                        class="w-8 h-8 rounded-lg bg-sage text-forest font-bold"
-                    >
-                        −
-                    </button>
-
-                    <span class="font-medium text-forest">
-                        {{ product.quantity }}
-                    </span>
-
-                    <button
-                        @click="cart.increaseQuantity(product.id)"
-                        class="w-8 h-8 rounded-lg bg-sage text-forest font-bold"
-                    >
-                        +
-                    </button>
+                <div class="w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-ivory flex items-center justify-center">
+                    <img
+                        :src="product.image"
+                        :alt="product.name"
+                        class="w-full h-full object-contain"
+                    />
                 </div>
+
+                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-lg font-semibold text-forest">
+                            {{ product.name }}
+                        </h2>
+
+                        <p class="text-forest font-medium mt-2">
+                            {{ product.price }} €
+                        </p>
+
+                        <div class="flex items-center gap-3 mt-3">
+                            <button
+                                @click="cart.decreaseQuantity(product.id)"
+                                class="w-8 h-8 rounded-lg bg-sage text-forest font-bold"
+                            >
+                                −
+                            </button>
+
+                            <span class="font-medium text-forest">
+                                {{ product.quantity }}
+                            </span>
+
+                            <button
+                                @click="cart.increaseQuantity(product.id)"
+                                class="w-8 h-8 rounded-lg bg-sage text-forest font-bold"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                
             </div>
         </div>
         <div
