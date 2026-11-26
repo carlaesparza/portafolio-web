@@ -92,13 +92,26 @@ const total = computed(() => {
         </div>
         <div
             v-if="cartProducts.length > 0"
-            class="mt-8 flex justify-end"
-            >
+            class="mt-8 flex flex-col items-end gap-4"
+        >
             <div class="bg-white rounded-xl shadow-md p-6">
                 <p class="text-xl font-bold text-forest">
-                Total: {{ total.toFixed(2) }} €
+                    Total: {{ total.toFixed(2) }} €
                 </p>
+                <button
+                    class="mt-4 w-full bg-forest text-ivory px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+                    >
+                    Finalizar compra
+                </button>
+
+                <RouterLink
+                    to="/"
+                    class="inline-flex w-fit items-center justify-center mt-4 bg-sage text-forest px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+                >
+                    Seguir comprando
+                </RouterLink>
             </div>
+            
         </div>
 
     </section>
