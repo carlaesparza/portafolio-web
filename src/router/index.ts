@@ -7,6 +7,7 @@ import Layout from "@/pages/Layout.vue";
 import Productes from "@/pages/productos/Productes.vue";
 import ProductesDetalls from "@/pages/ProductesDetalls.vue";
 import Carro from "@/pages/Carro.vue";
+import Favoritos from '@/pages/Favoritos.vue'
 
 
 export const router = createRouter({
@@ -72,6 +73,11 @@ export const router = createRouter({
       path: '/carrito',
       name: 'cart',
       component: Carro
+    },
+    {
+      path: '/favoritos',
+      name: 'favoritos',
+      component: Favoritos
     },
   
     {

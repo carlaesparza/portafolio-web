@@ -4,10 +4,12 @@ import { House } from '@lucide/vue';
 import { RouterLink, RouterView } from 'vue-router';
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { ShoppingCart } from '@lucide/vue';
+import { ShoppingCart, Heart } from '@lucide/vue';
 import { useCartStore } from '@/stores/carrito'
+import { useFavoritesStore } from '@/stores/favoritos'
 
 const cart = useCartStore()
+const favorites = useFavoritesStore()
 
 const route = useRoute()
 
@@ -78,7 +80,18 @@ const rutaSeccion = computed(() => {
                             </span>
                         </div>
                     </RouterLink>
-                    
+                    <RouterLink
+                        to="/favoritos"
+                        class="relative flex items-center justify-center w-12 h-12 text-forest"
+                    >
+                        <Heart class="w-7 h-7" />
+                        <span
+                            v-if="favorites.favorites.length > 0"
+                            class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                        >
+                            {{ favorites.favorites.length }}
+                        </span>
+                    </RouterLink>
                     
                     
                 </div>

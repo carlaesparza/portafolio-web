@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
-import { ShoppingCart } from '@lucide/vue';
+import { ShoppingCart, Heart } from '@lucide/vue';
+import { useFavoritesStore } from '@/stores/favoritos'
 
 
 import { useCartStore } from '@/stores/carrito'
 
 const cart = useCartStore()
+const favorites = useFavoritesStore()
 
 
 </script>
@@ -14,13 +16,25 @@ const cart = useCartStore()
 
   <div class="bg-beige h-screen">
 
-    <div class="flex justify-end pt-4 pr-3 mb-6">
+    <div class="flex justify-end items-center gap-3 mb-6 pt-4 pr-3">
+      <RouterLink
+        to="/favoritos"
+        class="relative flex items-center justify-center w-12 h-12 text-forest"
+      >
+        <Heart class="w-7 h-7" />
+        <span
+          v-if="favorites.favorites.length > 0"
+          class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+        >
+          {{ favorites.favorites.length }}
+        </span>
+      </RouterLink>
+
       <RouterLink
         to="/carrito"
         class="relative flex items-center justify-center w-12 h-12 text-forest"
       >
         <ShoppingCart class="w-7 h-7" />
-
         <span
           v-if="cart.items.length > 0"
           class="absolute top-0 right-0 bg-forest text-ivory text-xs rounded-full w-5 h-5 flex items-center justify-center"
